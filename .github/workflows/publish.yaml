@@ -6,7 +6,7 @@ on:
       - 'v*.*.*'
 
 jobs:
-  publish_node_22:
+  publish:
     name: Publish to Docker Hub
 
     runs-on: ubuntu-latest
