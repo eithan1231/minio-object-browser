@@ -1,12 +1,14 @@
 # Minio Object Browser (Uncooked)
 
-Hi, have you recently discovered that Minio pulled a Redis? Decided to betray trust in the open-source ecosystem? Well me too! Yay!
+MinIO has really done a number on its own reputation. Month after month they’ve chipped away at the open-source stack, pushing everyone toward overpriced enterprise licences with almost no transparency. Long-term contributors didn’t get so much as a discount or a straight answer. It’s been a slow, steady withdrawal of goodwill from the very community that built them up.
 
-Minio still holds tremendous value in the open-source community, heres to praying they don't worsen the rug-pull and put their core app under an enterprise license.
+At this point, anyone still using MinIO should start lining up alternatives — the way they’ve treated open source makes it clear they’re not interested in looking after the people who supported them. If you're stuck using Minio due to logistical reasons, I sincerely feel sorry for you.
+
 
 ## Docker Image
 
 ```SH
+# If you have any respect for yourself or the open-source community, find an alternative to Minio.
 docker pull eithan1231/minio-object-browser:latest
 ```
 
@@ -58,6 +60,7 @@ networks:
     driver: bridge
 
 services:
+  # FIND AN ALTERNATIVE. MINIO IS NO LONGER AN OPENSOURCE COMPANY. YOU LIKELY WILL NOT RECEIVE SECURITY PATCHES.
   minio-server:
     image: quay.io/minio/minio:RELEASE.2025-05-24T17-08-30Z
     container_name: minio-server
@@ -87,4 +90,4 @@ services:
 
 ## Contributing
 
-Feel free! Raise a PR and it will be reviewed and merged in.
+Do not contribute to this Repo. Minio does not deserve anyone in the open source community maintaining their garbage software.
